@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'tradegothiclt-bold', sans-serif;
+}
+
+.main-heading {
+    text-align: center;
+    font-size: 3rem;
+    font-family: cursive;
+    padding: .7rem 0;
+    font-weight: 500;
+    padding-top: 2.3rem;
+}
+
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+}
+
+/* =====-----=== Landing Page ===-----===== */
+
+/* =====-----=== Navbar===-----===== */
+
+#TopNavBar {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 99;
+    transition: 0.5s;
+    background-color: black;
+}
+
+#navLinksContainer {
+    flex: 3;
+    font-weight: 300;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: 0.5s;
+}
+
+#navLinksContainer a {
+    float: left;
+    padding-left: 10px;
+    padding-right: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.menuIcon {
+    display: none;
+}
+
+.landing-page {
+    background-image: linear-gradient(rgba(15, 15, 15, 0.5), rgba(5, 5, 5, 0.6)),
+        url("../images/black-background-costume-dark-1097456.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    min-height: 100vh;
+    border-bottom: .09px solid grey;
+}
+
+.landing-page-content {
+    color: #f1f1f1;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 3rem;
+    color: lightcyan;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.landing-page-content h1 {
+    padding-bottom: 1.5rem;
+}
+
+/* =====-----=== About Section ===-----===== */
+
+.about,
+.projects,
+.myEdu,
+.skills {
+    /*    background: white;
+    */
+    border-bottom: .09px solid grey;
+    color: black;
+}
+
+#about-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6rem;
+    padding: 3rem;
+    padding-left: 0;
+    padding-top: 1rem;
+    width: 100%;
+}
+
+.profile-image {
+    width: 25%;
+    height: 350px;
+    border: .5rem solid white;
+    border-radius: 5px;
+    overflow-y: hidden;
+    margin-right: 2rem;
+    box-shadow: 2px 5px 30px rgba(33, 133, 133, .3);
+}
+
+.about-content h2 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    font-family: cursive;
+    color: black;
+}
+
+.about-content h3 {
+    font-family: sans;
+    color: darkgrey;
+    padding: .3rem 0;
+    font-size: 1.5rem;
+}
+
+.profile-image:hover {
+    box-shadow: 2px 5px 30px rgba(33, 133, 133, .6);
+}
+
+.profile-image img {
+    height: 100%;
+    width: 100%;
+}
+
+.button {
+    background-color: darkcyan;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-transition-duration: 0.5s;
+    /* Safari */
+    transition-duration: 0.5s;
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+
+.button {
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button:hover {
+    box-shadow: 0 5px 9px 0 rgba(180, 180, 180, 0.14), 0 1px 10px 0 rgba(180, 180, 180, 0.14);
+}
+
+
+
+/* =====-----=== Projects Section ===-----===== */
+
+.col-container {
+    display: flex;
+    margin: 0 5rem;
+}
+
+
+.col-container:last-child {
+    padding-bottom: 3%;
+}
+
+.col-container .col {
+    box-shadow: 0 0 10px rgba(3, 3, 3, .7);
+    border-radius: 2px;
+    padding: 1.5rem;
+    padding-top: .5rem;
+    flex-grow: 1;
+    margin: 1rem;
+    width: 33.33%;
+    border: 1px solid grey;
+    background-color: white;
+}
+
+.col-container .col:hover {
+    border: 1px solid green;
+}
+
+
+.col h2 {
+    font-size: 1.8em;
+    color: green;
+    padding: 0;
+    text-align: center;
+    border-bottom: 1px solid green;
+}
+
+.col h3 {
+    font-size: 1em;
+    text-align: left;
+    padding-top: 20px;
+    color: dodgerblue;
+}
+
+ul li {
+    font-weight: 200;
+    font-size: 1.5rem;
+    padding: 2px;
+    padding-top: 10px;
+    color: dodgerblue;
+    list-style: none;
+}
+
+ul li::before {
+    content: "\2022";
+    color: green;
+    font-weight: 1500;
+    display: inline-block;
+    width: 1em;
+}
+
+/* =====-----=== Education Section ===-----===== */
+
+
+
+.myEdu h2 {
+    padding: 10px;
+}
+
+.myEdu p {
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* =====-----=== Footer Section ===-----===== */
+
+.footer {
+    background: white;
+    border-top: .09px solid lightblue;
+    text-align: center;
+}
+
+.footer h1 {
+    color: black;
+    font-size: 60px;
+    margin: 0;
+    padding: 30px;
+    padding-top: 10px;
+    font-weight: 400;
+    font-family: cursive;
+}
+
+.footer p {
+    padding: 3rem 0;
+    padding-bottom: .5rem;
+    font-size: 1.6rem;
+    color: black;
+    font-family: fantasy;
+}
+
+.footer a {
+    color: grey;
+}
+
+.author {
+    margin-bottom: 10px;
+
+}
+
+.author a {
+    color: black;
+}
+
+.fa {
+    width: 40px;
+}
+
+.icons a {
+    color: black;
+    font-size: 1.5rem;
+    transition: 0.5;
+}
+
+.icons a:hover {
+    color: gray;
+}
+
+/* =====-----=== Media Queries===-----===== */
+
+@media only screen and (max-width: 1000px) {
+
+    .col-container {
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: auto;
+        margin: 0 5rem;
+    }
+
+    .col-container .col {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .about-content {
+        padding-top: 0;
+    }
+
+    .profile-image {
+        height: 300px;
+        width: 300px;
+    }
+
+    .landing-page-content {
+        font-size: 1.5rem;
+        vertical-align: middle;
+        padding: 45% 0;
+    }
+
+    #about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about-container .profile-image {
+        width: 50%;
+        height: 400px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #about-container {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 642px) {
+    #about-container .profile-image {
+        width: 80%;
+        height: 300px;
+        margin: 20px auto;
+        padding: 0;
+    }
+
+    .col-container:last-child {
+        padding-bottom: 0;
+    }
+
+    .col-container {
+        margin: 0;
+        padding: 20px;
+    }
+
+    .col-container .col {
+        width: 100%;
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    .footer h1 {
+        font-size: 40px;
+    }
+
+}
